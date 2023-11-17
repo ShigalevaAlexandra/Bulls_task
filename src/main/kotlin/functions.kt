@@ -27,12 +27,11 @@ fun inputUserChislo(): List<Int> {
 
     //Если введено цифр больше 4, то мы обрабатываем строку, удаляя лишнии элементы с конца
     if (inpUserChislo.length > sizeChislo) {
-        println("Число должно состоять и 4-х цифр!")
+        println("Число должно состоять из 4-х цифр!")
 
         TRUEinpUserChislo = inpUserChislo.substring(0, inpUserChislo.length - abs(4 - inpUserChislo.length))
         println("""
             Редактируем введенное число...
-            
             Ваше число = ${TRUEinpUserChislo.toInt()}"""
         )
     } else {

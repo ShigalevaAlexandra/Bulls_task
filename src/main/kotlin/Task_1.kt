@@ -6,7 +6,7 @@
 fun main() {
     val botChislo = genBotChislo()
     var separator = ""
-    println("\nКомпьютер загадал число:\n${botChislo.joinToString(separator)}")
+    println("\nКомпьютер загадал число:\n<${botChislo.joinToString(separator)}>")
 
     var userChislo: List<Int>
     var resultGame: Pair<Int, Int>
